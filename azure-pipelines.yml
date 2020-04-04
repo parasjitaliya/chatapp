@@ -25,7 +25,11 @@ steps:
     python -m pip install --upgrade pip
     pip install -r chatroom/requirements.txt
   displayName: 'Install dependencies'
-  
+
+- task: CopyFiles@2
+  inputs:
+    targetFolder: $(Build.ArtifactStagingDirectory)
+
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
