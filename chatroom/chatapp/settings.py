@@ -13,7 +13,7 @@ SECRET_KEY = '4tz_w)booce3w)fm!k!%sp9c3$a#)cr6s+4*e^#^8^ko8@1p&9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -80,7 +80,8 @@ DATABASES = {
         'NAME':'chatapp',
         'USER':'paras123',
         'PASSWORD':'paras123',
-        'HOST':'localhost'
+        'HOST':'localhost',
+        'PORT':'',
     }
 }
 
@@ -130,6 +131,6 @@ STATIC_ROOT=os.path.join(BASE_DIR,'assets')
 EMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend'
 EMAIL_USE_TLS = True
 EMAIL_HOST ='smtp.gmail.com'
-EMAIL_HOST_USER ='moneshgomathi1@gmail.com'
-EMAIL_HOST_PASSWORD ='Monesh@1906'
+EMAIL_HOST_USER ='parasjitaliya@gmail.com'
+EMAIL_HOST_PASSWORD ='paras@92'
 EMAIL_PORT = 587
